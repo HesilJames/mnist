@@ -1,0 +1,6 @@
+model_checkpoint_path: "F:\\\345\255\246\344\271\240\\tensorflow_tools\\tutorials\\mnist\\data-4999"
+all_model_checkpoint_paths: "F:\\\345\255\246\344\271\240\\tensorflow_tools\\tutorials\\mnist\\data-999"
+all_model_checkpoint_paths: "F:\\\345\255\246\344\271\240\\tensorflow_tools\\tutorials\\mnist\\data-1999"
+all_model_checkpoint_paths: "F:\\\345\255\246\344\271\240\\tensorflow_tools\\tutorials\\mnist\\data-2999"
+all_model_checkpoint_paths: "F:\\\345\255\246\344\271\240\\tensorflow_tools\\tutorials\\mnist\\data-3999"
+all_model_checkpoint_paths: "F:\\\345\255\246\344\271\240\\tensorflow_tools\\tutorials\\mnist\\data-4999"
