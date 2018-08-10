@@ -13,6 +13,8 @@ from six.moves import urllib
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
+DAYS=80
+ONEDAYCOUNT=5
 
 class StockData:
 
@@ -41,25 +43,29 @@ class StockData:
                 if b == None:
                     continue
                 else:
-                    res1d = [d['open'], d['close'], d['high'], d['low'], d['volume'], b['open'], b['close'], b['high'],
-                             b['low'], b['volume']]
+                    res1d = [d['open'], d['close'], d['high'], d['low'], d['volume']]
                     #涨跌数据减去大盘比率
                     rate=((float(d['close'])-float(d['open']))/float(d['open']))-((float(b['close'])-float(b['open']))/float(b['open']))
                     if rate<-3:
-                        label.append(0)
+                        label.append(-2)
                     elif rate<0:
-                        label.append(1)
+                        label.append(-1)
                     elif rate<3:
-                        label.append(2)
+                        label.append(1)
                     else:
-                        label.append(3)
+                        label.append(2)
                     res.extend(res1d)
             except:
                 print(d['date'])
-        return numpy.array(res) , label
+        res_reshape=[]
+        m=res.__len__()
+        res=list(res)
+        for i in range(0,m-DAYS*ONEDAYCOUNT,ONEDAYCOUNT):
+            res_reshape.append(res[i:i+(DAYS*ONEDAYCOUNT)])
+        label=label[DAYS:]
+        return numpy.array(res_reshape) , label
 
 
 sd = StockData('000760')
 r,l=sd._read32()
-print(l)
 
