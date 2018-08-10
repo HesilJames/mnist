@@ -99,26 +99,33 @@ def get_basic_datas(data_kind):#datakind 为debtpaying,growth,operation,profit,r
     client = pymongo.MongoClient('localhost', 27017)
     table_stock = client['stock']
     sheet=table_stock[data_kind]
-    for year in range(STARTYEAR,ENDYEAR):
-        for season in range(1,4):
-            if data_kind == 'debtpaying':
-                tf=ts.get_debtpaying_data(year,season)
-            elif data_kind=='growth':
-                tf=ts.get_growth_data(year,season)
-            elif data_kind=='operation':
-                tf=ts.get_operation_data(year,season)
-            elif data_kind=='profit':
-                tf=ts.get_profit_data(year,season)
-            elif data_kind=='report':
-                tf=ts.get_report_data(year,season)
-            else:
-                print('Not available data type of data_kind!')
-                return
-            jsonres = json.loads(tf.to_json(orient='records'))
-            for j in jsonres:
-                sheet.insert_one(j)
+    for year in range(STARTYEAR,ENDYEAR+1):
+        try:
+            for season in range(1, 5):
+                print('getting ' + datakind + ' data at year:' + str(year) + " season:" + str(season))
+                if data_kind == 'debtpaying':
+                    tf = ts.get_debtpaying_data(year, season)
+                elif data_kind == 'growth':
+                    tf = ts.get_growth_data(year, season)
+                elif data_kind == 'operation':
+                    tf = ts.get_operation_data(year, season)
+                elif data_kind == 'profit':
+                    tf = ts.get_profit_data(year, season)
+                elif data_kind == 'report':
+                    tf = ts.get_report_data(year, season)
+                else:
+                    print('Not available data type of data_kind!')
+                    return
+                jsonres = json.loads(tf.to_json(orient='records'))
+                for j in jsonres:
+                    sheet.insert_one(j)
+        except:  #数据缺失，tushare接口会报网络错误
+            print('the year: '+str(year)+' lost data will begin next year')
+            continue
 
-datakinds=['debtpaying','growth','operation','profit','report']
+
+#datakinds=['debtpaying','growth','operation','profit','report']
+datakinds=['growth','operation','profit','report']
 for datakind in datakinds:
     print('start getting '+datakind+'....')
     get_basic_datas(datakind)
