@@ -5,7 +5,7 @@ import datetime
 import pandas as pd
 import numpy as np
 
-STARTYEAR=2010
+STARTYEAR=2000
 ENDYEAR=2018
 
 def str2Date(str):
@@ -94,80 +94,34 @@ def getDailyData(code,starttime,endtime=datetime.datetime.today()):
         resArray.append(float(s['close']))
     resPD=pd.DataFrame(resArray)
 
-
-def get_report_data():
+#获取所有基本面数据
+def get_basic_datas(data_kind):#datakind 为debtpaying,growth,operation,profit,report
     client = pymongo.MongoClient('localhost', 27017)
     table_stock = client['stock']
-    sheet_report=table_stock['report']
+    sheet=table_stock[data_kind]
     for year in range(STARTYEAR,ENDYEAR):
         for season in range(1,4):
-            tf=ts.get_report_data(year,season)
+            if data_kind == 'debtpaying':
+                tf=ts.get_debtpaying_data(year,season)
+            elif data_kind=='growth':
+                tf=ts.get_growth_data(year,season)
+            elif data_kind=='operation':
+                tf=ts.get_operation_data(year,season)
+            elif data_kind=='profit':
+                tf=ts.get_profit_data(year,season)
+            elif data_kind=='report':
+                tf=ts.get_report_data(year,season)
+            else:
+                print('Not available data type of data_kind!')
+                return
             jsonres = json.loads(tf.to_json(orient='records'))
             for j in jsonres:
-                sheet_report.insert_one(j)
+                sheet.insert_one(j)
 
-
-
-def get_profit_data():
-    client = pymongo.MongoClient('localhost', 27017)
-    table_stock = client['stock']
-    sheet_profit=table_stock['profit']
-    for year in range(STARTYEAR,ENDYEAR):
-        for season in range(1,4):
-            tf=ts.get_profit_data(year,season)
-            jsonres = json.loads(tf.to_json(orient='records'))
-            for j in jsonres:
-                sheet_profit.insert_one(j)
-
-def get_operation_data():
-    client = pymongo.MongoClient('localhost', 27017)
-    table_stock = client['stock']
-    sheet_operation=table_stock['operation']
-    for year in range(STARTYEAR,ENDYEAR):
-        for season in range(1,4):
-            tf=ts.get_operation_data(year,season)
-            jsonres = json.loads(tf.to_json(orient='records'))
-            for j in jsonres:
-                sheet_operation.insert_one(j)
-
-def get_growth_data():
-    client = pymongo.MongoClient('localhost', 27017)
-    table_stock = client['stock']
-    sheet_growth=table_stock['growth']
-    for year in range(STARTYEAR,ENDYEAR):
-        for season in range(1,4):
-            tf=ts.get_growth_data(year,season)
-            jsonres = json.loads(tf.to_json(orient='records'))
-            for j in jsonres:
-                sheet_growth.insert_one(j)
-
-def get_debtpaying_data():
-    client = pymongo.MongoClient('localhost', 27017)
-    table_stock = client['stock']
-    sheet_debtpaying=table_stock['debtpaying']
-    for year in range(STARTYEAR,ENDYEAR):
-        for season in range(1,4):
-            tf=ts.get_debtpaying_data(year,season)
-            jsonres = json.loads(tf.to_json(orient='records'))
-            for j in jsonres:
-                sheet_debtpaying.insert_one(j)
-
-def get_cashflow_data():
-    client = pymongo.MongoClient('localhost', 27017)
-    table_stock = client['stock']
-    sheet_cashflow=table_stock['cashflow']
-    for year in range(STARTYEAR,ENDYEAR):
-        for season in range(1,4):
-            tf=ts.get_cash_flow(year,season)
-            jsonres = json.loads(tf.to_json(orient='records'))
-            for j in jsonres:
-                sheet_cashflow.insert_one(j)
-
-get_debtpaying_data()
-get_growth_data()
-get_operation_data()
-get_profit_data()
-get_report_data()
+datakinds=['debtpaying','growth','operation','profit','report']
+for datakind in datakinds:
+    print('start getting '+datakind+'....')
+    get_basic_datas(datakind)
 
 #test_get_stock_code()
 #allStockCode=get_all_stock_code()
