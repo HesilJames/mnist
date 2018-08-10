@@ -63,6 +63,9 @@ class StockData:
         for i in range(0,m-DAYS*ONEDAYCOUNT,ONEDAYCOUNT):
             res_reshape.append(res[i:i+(DAYS*ONEDAYCOUNT)])
         label=label[DAYS:]
+        #股票基本数据附在数组最尾
+
+
         return numpy.array(res_reshape) , label
 
 
