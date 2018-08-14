@@ -25,11 +25,14 @@ if __name__ == "__main__":
     b = tf.Variable(tf.zeros([10]))
     y = tf.nn.softmax(tf.matmul(x, W) + b)
     y_ = tf.placeholder("float", [None, 10])
+    #conv1 layer
     W_conv1 = weight_variable([5, 5, 1, 32])
     b_conv1 = bias_variable([32])
     x_image = tf.reshape(x, [-1, 28, 28, 1])
-    h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1)
-    h_pool1 = max_pool_2x2(h_conv1)
+    h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1)   #output 28*28*32
+    h_pool1 = max_pool_2x2(h_conv1)                            #output 14*14*32
+
+    #conv2 layer
     W_conv2 = weight_variable([5, 5, 32, 64])
     b_conv2 = bias_variable([64])
 
