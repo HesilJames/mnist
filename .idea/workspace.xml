@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="">
+    <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="mod input_stock_data.py">
+      <change afterPath="$PROJECT_DIR$/buildntest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/mnist/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/mnist/v15/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,32 +17,39 @@
     <session id="-175492977">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="null/stock/basics" value="4" />
+          <entry key="null/stock/basics" value="5" />
           <entry key="null/stock/daily" value="2" />
-          <entry key="py" value="2" />
+          <entry key="null/stock/debtpaying" value="2" />
+          <entry key="null/stock/report" value="1" />
+          <entry key="py" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="MONGO" value="6" />
-          <entry key="Python" value="2" />
+          <entry key="MONGO" value="10" />
+          <entry key="Python" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="155" />
-          <entry key="py" value="688" />
+          <entry key="Python Console" value="820" />
+          <entry key="py" value="4481" />
+          <entry key="txt" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="843" />
+          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="Python" value="5301" />
         </counts>
       </usages-collector>
     </session>
@@ -48,43 +57,109 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input_data.py">
+        <entry file="file://$PROJECT_DIR$/stockbasics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2088">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="2178">
+              <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
               <folding>
-                <element signature="e#734#772#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GPUTENSORCHECK.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2592">
+              <caret line="146" column="10" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/devicetest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mnist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2664">
+              <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
+              <folding>
+                <element signature="e#1144#1182#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mnist_softmax.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+              <folding>
+                <element signature="e#806#844#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multilayertest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/input_stock_data.py">
+        <entry file="file://$PROJECT_DIR$/buildntest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="252">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1533720696502" expanded="true" signature="429:784" ph="..." />
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1534229018033" expanded="true" signature="111:116" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="mongo://null/stock/daily">
-          <provider selected="true" editor-type-id="MongoData" />
+        <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/203_variable.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="mongo://null/stock/daily">
-          <provider selected="true" editor-type-id="MongoData" />
+        <entry file="file://$PROJECT_DIR$/mnist_with_summaries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="48" column="32" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="32" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="mongo://null/stock/basics">
-          <provider selected="true" editor-type-id="MongoData" />
+        <entry file="file://$PROJECT_DIR$/get_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -96,6 +171,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>data</find>
+      <find>mnist</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -103,7 +184,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/get_data.py" />
-        <option value="$PROJECT_DIR$/multilayertest.py" />
         <option value="$PROJECT_DIR$/../../udacity/1_notmnist.ipynb" />
         <option value="$PROJECT_DIR$/fully_connected_feed.py" />
         <option value="$PROJECT_DIR$/MNIST_data/devicetest.py" />
@@ -112,12 +192,19 @@
         <option value="$PROJECT_DIR$/testvscode.py" />
         <option value="$PROJECT_DIR$/GPUTENSORCHECK.py" />
         <option value="$PROJECT_DIR$/MNIST_data/input_stock_data.py" />
+        <option value="$PROJECT_DIR$/listtest.py" />
+        <option value="$PROJECT_DIR$/input_stock_data.py" />
+        <option value="$PROJECT_DIR$/stockbasics.py" />
+        <option value="$PROJECT_DIR$/mnist_with_summaries.py" />
+        <option value="$PROJECT_DIR$/mnist_softmax.py" />
+        <option value="$PROJECT_DIR$/multilayertest.py" />
+        <option value="$PROJECT_DIR$/buildntest.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="y" value="197" />
+    <option name="x" value="178" />
+    <option name="y" value="132" />
     <option name="width" value="1440" />
     <option name="height" value="805" />
   </component>
@@ -129,7 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,20 +223,16 @@
               <item name="mnist" type="b2602c69:ProjectViewProjectNode" />
               <item name="mnist" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mnist" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mnist" type="462c0819:PsiDirectoryNode" />
-              <item name="MNIST_data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../stockrnn/datamining/tensorflow-program/rnn/stock_predict" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -169,8 +251,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.input_stock_data">
-    <configuration name="GPUTENSORCHECK" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.buildntest">
+    <configuration name="201_session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mnist" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/201_session.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="buildntest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -182,7 +285,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GPUTENSORCHECK.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/buildntest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,7 +294,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="devicetest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mnist_softmax" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,7 +306,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/devicetest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mnist_softmax.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -212,28 +315,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="input_stock_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="mnist" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MNIST_data" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\学习\tensorflow_tools\tutorials\mnist\input_stock_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testgit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mnist_with_summaries" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,7 +327,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testgit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mnist_with_summaries.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,7 +336,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testvscode" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="multilayertest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,7 +348,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testvscode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multilayertest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,19 +358,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.devicetest" />
-      <item itemvalue="Python.testvscode" />
-      <item itemvalue="Python.GPUTENSORCHECK" />
-      <item itemvalue="Python.testgit" />
-      <item itemvalue="Python.input_stock_data" />
+      <item itemvalue="Python.mnist_softmax" />
+      <item itemvalue="Python.multilayertest" />
+      <item itemvalue="Python.mnist_with_summaries" />
+      <item itemvalue="Python.201_session" />
+      <item itemvalue="Python.buildntest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.input_stock_data" />
-        <item itemvalue="Python.testgit" />
-        <item itemvalue="Python.devicetest" />
-        <item itemvalue="Python.testvscode" />
-        <item itemvalue="Python.GPUTENSORCHECK" />
+        <item itemvalue="Python.buildntest" />
+        <item itemvalue="Python.201_session" />
+        <item itemvalue="Python.mnist_softmax" />
+        <item itemvalue="Python.multilayertest" />
+        <item itemvalue="Python.mnist_with_summaries" />
       </list>
     </recent_temporary>
   </component>
@@ -303,39 +385,134 @@
       <option name="presentableId" value="Default" />
       <updated>1531967950879</updated>
     </task>
+    <task id="LOCAL-00001" summary="add input_stock_data.py">
+      <created>1533796675969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533796675970</updated>
+    </task>
+    <task id="LOCAL-00002" summary="mod input_stock_data.py">
+      <created>1533799518017</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533799518017</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mod input_stock_data.py">
+      <created>1533799990286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533799990286</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mod input_stock_data.py">
+      <created>1533803567801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533803567801</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mod input_stock_data.py">
+      <created>1533807750209</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1533807750209</updated>
+    </task>
+    <task id="LOCAL-00006" summary="mod input_stock_data.py">
+      <created>1533809435411</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533809435411</updated>
+    </task>
+    <task id="LOCAL-00007" summary="mod input_stock_data.py">
+      <created>1533870518146</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533870518146</updated>
+    </task>
+    <task id="LOCAL-00008" summary="mod input_stock_data.py">
+      <created>1533884774202</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1533884774202</updated>
+    </task>
+    <task id="LOCAL-00009" summary="mod input_stock_data.py">
+      <created>1533889512819</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533889512819</updated>
+    </task>
+    <task id="LOCAL-00010" summary="mod input_stock_data.py">
+      <created>1534128373606</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1534128373606</updated>
+    </task>
+    <task id="LOCAL-00011" summary="mod input_stock_data.py">
+      <created>1534147360060</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1534147360060</updated>
+    </task>
+    <task id="LOCAL-00012" summary="mod input_stock_data.py">
+      <created>1534209025244</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1534209025244</updated>
+    </task>
+    <task id="LOCAL-00013" summary="mod multilayertest.py">
+      <created>1534212466350</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1534212466350</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19366953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49892703" visible="true" weight="0.20935412" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49624464" visible="true" weight="0.32182628" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946353" weight="0.32850778" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005365" side_tool="true" weight="0.42650333" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49946353" weight="0.32922733" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49946353" weight="0.42650333" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49892703" weight="0.32850778" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037554" side_tool="true" visible="true" weight="0.32182628" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49892703" weight="0.32850778" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4967811" weight="0.24164811" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Mongo Explorer" order="3" visible="true" weight="0.33959228" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.64634144" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="add input_stock_data.py" />
+    <MESSAGE value="mod input_stock_data.py" />
+    <MESSAGE value="mod multilayertest.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="mod multilayertest.py" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BUILD">
@@ -356,13 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnist_with_summaries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -408,37 +578,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fully_connected_feed.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3492">
-          <caret line="207" column="46" selection-start-line="207" selection-start-column="46" selection-end-line="207" selection-end-column="46" />
-          <folding>
-            <element signature="e#784#822#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devicetest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testsoftmax.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="90" column="11" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -449,13 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multilayertest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testvscode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -463,40 +599,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_data.py">
+    <entry file="file://$PROJECT_DIR$/input_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="918">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fully_connected_feed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listtest.py" />
+    <entry file="file://$PROJECT_DIR$/input_stock_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stockbasics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GPUTENSORCHECK.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2556">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-          <folding>
-            <element signature="e#889#902#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2592">
+          <caret line="146" column="10" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_data.py">
+    <entry file="file://$PROJECT_DIR$/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2088">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="2664">
+          <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
           <folding>
-            <element signature="e#734#772#0" expanded="true" />
+            <element signature="e#1144#1182#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_stock_data.py">
+    <entry file="file://$PROJECT_DIR$/mnist_with_summaries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/201_session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/202_placeholder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/204_activation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/301_simple_regression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/203_variable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/305_tensorboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devicetest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist_softmax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1533720696502" expanded="true" signature="429:784" ph="..." />
+            <element signature="e#806#844#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multilayertest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildntest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1534229018033" expanded="true" signature="111:116" ph="..." />
           </folding>
         </state>
       </provider>
