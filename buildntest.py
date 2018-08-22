@@ -50,15 +50,15 @@ plt.show()
 
 init = tf.global_variables_initializer()
 sess = tf.Session()
-merge=tf.summary.merge_all()
-writer=tf.summary.FileWriter('logs/',sess.graph)
+merge = tf.summary.merge_all()
+writer = tf.summary.FileWriter('logs/',sess.graph)
 sess.run(init)
 
 for i in range(10000):
     sess.run(train_step, feed_dict={xs: x_data, ys: y_data})
     if i % 50 == 0:
-        result=sess.run(merge,feed_dict={xs:x_data,ys:y_data})
-        writer.add_summary(result,i)
+        result = sess.run(merge ,feed_dict={xs:x_data , ys:y_data})
+        writer.add_summary(result ,i)
         ''' plot visuallize
         try:
             ax.lines.remove(lines[0])
