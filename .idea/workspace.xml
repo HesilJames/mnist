@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="mod input_stock_data.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildntest.py" beforeDir="false" afterPath="$PROJECT_DIR$/buildntest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mnist_with_summaries.py" beforeDir="false" afterPath="$PROJECT_DIR$/mnist_with_summaries.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,13 +51,46 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="886763480">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="17" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="mnist" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/multilayertest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="893">
               <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -66,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buildntest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+            <state relative-caret-position="434">
+              <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -79,19 +112,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/203_variable.py">
+        <entry file="file://$PROJECT_DIR$/GPUTENSORCHECK.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="1862">
+              <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hesilmnist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mnist_with_summaries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="48" column="32" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="32" />
+            <state relative-caret-position="531">
+              <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/stockbasics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2299">
+              <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testvscode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -99,7 +165,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
+            <state relative-caret-position="19">
               <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
             </state>
           </provider>
@@ -127,27 +193,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/get_data.py" />
-        <option value="$PROJECT_DIR$/../../udacity/1_notmnist.ipynb" />
+        <option value="$USER_HOME$/udacity/1_notmnist.ipynb" />
         <option value="$PROJECT_DIR$/fully_connected_feed.py" />
         <option value="$PROJECT_DIR$/MNIST_data/devicetest.py" />
         <option value="$PROJECT_DIR$/devicetest.py" />
         <option value="$PROJECT_DIR$/testsoftmax.py" />
-        <option value="$PROJECT_DIR$/testvscode.py" />
         <option value="$PROJECT_DIR$/GPUTENSORCHECK.py" />
         <option value="$PROJECT_DIR$/MNIST_data/input_stock_data.py" />
         <option value="$PROJECT_DIR$/listtest.py" />
         <option value="$PROJECT_DIR$/input_stock_data.py" />
         <option value="$PROJECT_DIR$/stockbasics.py" />
-        <option value="$PROJECT_DIR$/mnist_with_summaries.py" />
         <option value="$PROJECT_DIR$/mnist_softmax.py" />
         <option value="$PROJECT_DIR$/multilayertest.py" />
         <option value="$PROJECT_DIR$/buildntest.py" />
+        <option value="$PROJECT_DIR$/testvscode.py" />
+        <option value="$PROJECT_DIR$/mnist_with_summaries.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="178" />
-    <option name="y" value="132" />
+    <option name="x" value="176" />
+    <option name="y" value="130" />
     <option name="width" value="1440" />
     <option name="height" value="805" />
   </component>
@@ -169,7 +235,7 @@
             <path>
               <item name="mnist" type="b2602c69:ProjectViewProjectNode" />
               <item name="mnist" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="MNIST_data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -180,7 +246,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../stockrnn/datamining/tensorflow-program/rnn/stock_predict" />
-    <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -199,8 +265,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.buildntest">
-    <configuration name="201_session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.mnist_with_summaries">
+    <configuration name="GPUTENSORCHECK" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,11 +274,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/201_session.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GPUTENSORCHECK.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -242,7 +308,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mnist_softmax" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="hesilmnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,7 +320,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mnist_softmax.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hesilmnist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,19 +372,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.mnist_softmax" />
       <item itemvalue="Python.multilayertest" />
       <item itemvalue="Python.mnist_with_summaries" />
-      <item itemvalue="Python.201_session" />
       <item itemvalue="Python.buildntest" />
+      <item itemvalue="Python.GPUTENSORCHECK" />
+      <item itemvalue="Python.hesilmnist" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.buildntest" />
-        <item itemvalue="Python.201_session" />
-        <item itemvalue="Python.mnist_softmax" />
-        <item itemvalue="Python.multilayertest" />
         <item itemvalue="Python.mnist_with_summaries" />
+        <item itemvalue="Python.buildntest" />
+        <item itemvalue="Python.hesilmnist" />
+        <item itemvalue="Python.GPUTENSORCHECK" />
+        <item itemvalue="Python.multilayertest" />
       </list>
     </recent_temporary>
   </component>
@@ -441,26 +507,35 @@
     <option name="localTasksCounter" value="16" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="3086" height="1702" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19366953" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49915966" visible="true" weight="0.19344263" />
+      <window_info id="Structure" order="1" sideWeight="0.50084037" side_tool="true" weight="0.19344263" />
+      <window_info id="Favorites" order="2" sideWeight="0.50084037" side_tool="true" weight="0.19344263" />
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49624464" visible="true" weight="0.32182628" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49624464" visible="true" weight="0.3212237" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32950923" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49892703" weight="0.32850778" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49892703" weight="0.3280255" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5037554" side_tool="true" weight="0.32182628" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49892703" weight="0.32850778" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4967811" weight="0.24164811" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49892703" weight="0.32823455" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4967811" weight="0.24155512" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -484,13 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/curl/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/curl/__init__.py" />
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -498,41 +567,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23130">
-          <caret line="1306" selection-start-line="1306" selection-end-line="1306" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/platform/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2088">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/saver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22320">
-          <caret line="1283" selection-start-line="1283" selection-end-line="1283" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../udacity/1_notmnist.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorboard/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/client/session.py" />
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/platform/app.py" />
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/training/saver.py" />
+    <entry file="file://$USER_HOME$/udacity/1_notmnist.ipynb" />
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorboard/main.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -554,20 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testvscode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-          <folding>
-            <element signature="e#734#772#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,85 +612,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
-          <folding>
-            <element signature="e#1#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mnist_with_summaries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/201_session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/202_placeholder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/204_activation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/301_simple_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/305_tensorboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/203_variable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stockbasics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GPUTENSORCHECK.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="146" column="10" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/201_session.py" />
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/202_placeholder.py" />
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/204_activation.py" />
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/301_simple_regression.py" />
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/305_tensorboard.py" />
+    <entry file="file://$PROJECT_DIR$/../../../morvanpython/Tensorflow-Tutorial/tutorial-contents/203_variable.py" />
     <entry file="file://$PROJECT_DIR$/devicetest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -673,9 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="155" column="29" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
-          <folding>
-            <element signature="e#1144#1182#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,15 +639,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-          <folding>
-            <element signature="e#806#844#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/multilayertest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="893">
           <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -699,13 +652,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildntest.py">
+    <entry file="file://$PROJECT_DIR$/GPUTENSORCHECK.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        <state relative-caret-position="1862">
+          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hesilmnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stockbasics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2299">
+          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testvscode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/buildntest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mnist_with_summaries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
         </state>
       </provider>
     </entry>
