@@ -37,7 +37,7 @@ flags = tf.app.flags
 FLAGS = flags.FLAGS
 flags.DEFINE_boolean('fake_data', False, 'If true, uses fake data '
                      'for unit testing.')
-flags.DEFINE_integer('max_steps', 50000, 'Number of steps to run trainer.')
+flags.DEFINE_integer('max_steps', 5000, 'Number of steps to run trainer.')
 flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate.')
 
 
@@ -79,8 +79,8 @@ def main(_):
 
   # Merge all the summaries and write them out to /tmp/mnist_logs
   merged = tf.summary.merge_all()
-  writer = tf.summary.FileWriter('logs/', sess.graph_def)
-  tf.initialize_all_variables().run()
+  writer = tf.summary.FileWriter('logs', sess.graph)
+  tf.global_variables_initializer().run()
 
   # Train the model, and feed in test data and record summaries every 10 steps
 
