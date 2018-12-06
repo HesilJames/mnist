@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="mod input_stock_data.py">
-      <change afterPath="$PROJECT_DIR$/plotnumber.py" afterDir="false" />
+    <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="add plotnumber.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multilayertest.py" beforeDir="false" afterPath="$PROJECT_DIR$/multilayertest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/multilayertest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="308">
+              <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -25,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plotnumber.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="180">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-end-line="13" selection-end-column="18" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -142,12 +142,12 @@
         <option value="$PROJECT_DIR$/stockbasics.py" />
         <option value="$PROJECT_DIR$/mnist_softmax.py" />
         <option value="$PROJECT_DIR$/buildntest.py" />
-        <option value="$PROJECT_DIR$/multilayertest.py" />
         <option value="$PROJECT_DIR$/mnist_with_summaries.py" />
         <option value="$PROJECT_DIR$/hesilmnist.py" />
         <option value="$PROJECT_DIR$/overfittest" />
         <option value="$PROJECT_DIR$/../../../python-movan/tutorials-master/tensorflowTUT/tf19_saver.py" />
         <option value="$PROJECT_DIR$/plotnumber.py" />
+        <option value="$PROJECT_DIR$/multilayertest.py" />
       </list>
     </option>
   </component>
@@ -205,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.plotnumber">
+  <component name="RunManager" selected="Python.multilayertest">
     <configuration name="full_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -227,7 +227,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mnist_with_summaries" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="multilayertest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -239,7 +239,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mnist_with_summaries.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multilayertest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,19 +312,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.mnist_with_summaries" />
       <item itemvalue="Python.overfittest" />
       <item itemvalue="Python.full_code" />
       <item itemvalue="Python.tf19_saver" />
       <item itemvalue="Python.plotnumber" />
+      <item itemvalue="Python.multilayertest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.multilayertest" />
         <item itemvalue="Python.plotnumber" />
         <item itemvalue="Python.tf19_saver" />
         <item itemvalue="Python.full_code" />
         <item itemvalue="Python.overfittest" />
-        <item itemvalue="Python.mnist_with_summaries" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544084456022</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add plotnumber.py">
+      <created>1544097028886</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1544097028886</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -505,7 +512,8 @@
     <MESSAGE value="add input_stock_data.py" />
     <MESSAGE value="mod multilayertest.py" />
     <MESSAGE value="mod input_stock_data.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="mod input_stock_data.py" />
+    <MESSAGE value="add plotnumber.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="add plotnumber.py" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BUILD">
@@ -776,20 +784,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multilayertest.py">
+    <entry file="file://$PROJECT_DIR$/plotnumber.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-end-line="13" selection-end-column="18" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plotnumber.py">
+    <entry file="file://$PROJECT_DIR$/multilayertest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="308">
+          <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

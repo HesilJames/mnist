@@ -1,6 +1,7 @@
 import tensorflow as tf
 import input_data
-
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 def weight_variable(shape):
@@ -17,6 +18,11 @@ def conv2d(x, W):
 def max_pool_2x2(x):
   return tf.nn.max_pool(x, ksize=[1, 2, 2, 1],
                         strides=[1, 2, 2, 1], padding='SAME')
+
+def plotnumber(x):
+    f, a = plt.subplots(1, 1, figsize=(1, 1))
+    a.imshow(np.reshape(x, (28, 28)))
+    plt.show()
 
 if __name__ == "__main__":
     mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
@@ -62,7 +68,12 @@ if __name__ == "__main__":
             train_accuracy = accuracy.eval(feed_dict={
                 x: batch[0], y_: batch[1], keep_prob: 1.0})
             print("step %d, training accuracy %g" % (i, train_accuracy))
+            print(sess.run(y_conv,feed_dict={x: batch[0], y_: batch[1], keep_prob: 1.0})[0])
+            print(batch[1][0])
+            plotnumber(batch[0][0])
         train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 
+    #sess.run(correct_prediction,feed_dict={x:mnist.test.images[0]})
 
-    print("test accuracy %g" % accuracy.eval(feed_dict={x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
+
+    #print("test accuracy %g" % accuracy.eval(feed_dict={x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
