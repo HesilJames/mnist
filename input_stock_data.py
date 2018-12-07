@@ -25,7 +25,7 @@ class StockData:
         daily_data = table_stock['daily']
         basic_data = table_stock['basics']
         self.daily = list(daily_data.find({'code': code}).sort('date', pymongo.ASCENDING))
-        #self.big = list(daily_data.find({'code': '000001'}).sort('date', pymongo.ASCENDING))#增加大盘数据用于对照
+        self.big = list(daily_data.find({'code': '000001'}).sort('date', pymongo.ASCENDING))#增加大盘数据用于对照
         self.basic = basic_data.find_one({'code': code})
 
     def search_Big(self, dateStr ):
@@ -47,26 +47,22 @@ class StockData:
                 tmp = self.daily[j]
                 res_low1.extend([tmp['close'], tmp['high'], tmp['low'], tmp['volume']])
             res.append(res_low1)
-            try:
-                b = self.search_Big(d['date'])
-                if b == None:
-                    rate = (float(d['close'])-float(d['open']))/float(d['open'])
-                else:
+            b = self.search_Big(d['date'])
+            if b == None:
+                rate = (float(d['close'])-float(d['open']))/float(d['open'])
+            else:
                     #涨跌数据减去大盘比率
-                    rate = ((float(d['close'])-float(d['open']))/float(d['open']))-((float(b['close'])-float(b['open']))/float(b['open']))
-
-                if rate < BIGLOWLEV:
-                    label.append(np.array([0, 0, 0, 0, 1]))
-                elif BIGLOWLEV < rate < SMALLLOWLEV:
-                    label.append(np.array([0, 0, 0, 1, 0]))
-                elif SMALLLOWLEV < rate < SMALLHIGHLEV:
-                    label.append(np.array([0, 0, 1, 0, 0]))
-                elif SMALLHIGHLEV < rate < BIGHIGHLEV:
-                    label.append(np.array([0, 1, 0, 0, 0]))
-                else:
-                    label.append(np.array([1, 0, 0, 0, 0]))
-            except:
-                print(d['date'])
+                rate = ((float(d['close'])-float(d['open']))/float(d['open']))-((float(b['close'])-float(b['open']))/float(b['open']))
+            if rate < BIGLOWLEV:
+                label.append(np.array([0, 0, 0, 0, 1]))
+            elif BIGLOWLEV < rate < SMALLLOWLEV:
+                label.append(np.array([0, 0, 0, 1, 0]))
+            elif SMALLLOWLEV < rate < SMALLHIGHLEV:
+                label.append(np.array([0, 0, 1, 0, 0]))
+            elif SMALLHIGHLEV < rate < BIGHIGHLEV:
+                label.append(np.array([0, 1, 0, 0, 0]))
+            else:
+                 label.append(np.array([1, 0, 0, 0, 0]))
 
         return np.array(res), np.array(label)
 
@@ -103,15 +99,12 @@ class StockData:
         # #股票基本数据附在数组最尾
         # return np.array(res_reshape), np.array(label)
 
-
+'''
 sd = StockData('000760')
 r, l = sd._read32()
 print(r.shape)
-print(r[0][0])
-
 print(l.shape)
-for i in range(1, 50):
-    print(l[i])
+'''
 
 #print(l)
 
