@@ -6,15 +6,16 @@ import pymongo
 import gzip
 import os
 
-import tensorflow.python.platform
-
-import numpy
-from six.moves import urllib
-from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
-DAYS=80
-ONEDAYCOUNT=5
+import numpy as np
+
+DAYS = 64
+ONEDAYCOUNT = 5
+BIGLOWLEV = -0.03
+SMALLLOWLEV = -0.005
+SMALLHIGHLEV = 0.005
+BIGHIGHLEV = 0.03
 
 class StockData:
 
@@ -23,9 +24,9 @@ class StockData:
         table_stock = client['stock']
         daily_data = table_stock['daily']
         basic_data = table_stock['basics']
-        self.daily = list(daily_data.find({'code' : code}).sort('date',pymongo.ASCENDING))
-        self.big = list(daily_data.find({'code' : '000001'}).sort('date',pymongo.ASCENDING))#增加大盘数据用于对照
-        self.basic = basic_data.find_one({'code' : code})
+        self.daily = list(daily_data.find({'code': code}).sort('date', pymongo.ASCENDING))
+        #self.big = list(daily_data.find({'code': '000001'}).sort('date', pymongo.ASCENDING))#增加大盘数据用于对照
+        self.basic = basic_data.find_one({'code': code})
 
     def search_Big(self, dateStr ):
         for b in self.big:
@@ -35,40 +36,83 @@ class StockData:
 
 
     def _read32(self):
-        res=[]
-        label=[]
-        for d in self.daily:
+        res = []
+        label = []
+        daylenth=self.daily.__len__()
+        print(daylenth)
+        for i in range(DAYS, daylenth):
+            res_low1=[]
+            d=self.daily[i]
+            for j in range(i-DAYS, i):
+                tmp = self.daily[j]
+                res_low1.extend([tmp['close'], tmp['high'], tmp['low'], tmp['volume']])
+            res.append(res_low1)
             try:
                 b = self.search_Big(d['date'])
                 if b == None:
-                    continue
+                    rate = (float(d['close'])-float(d['open']))/float(d['open'])
                 else:
-                    res1d = [d['open'], d['close'], d['high'], d['low'], d['volume']]
                     #涨跌数据减去大盘比率
-                    rate=((float(d['close'])-float(d['open']))/float(d['open']))-((float(b['close'])-float(b['open']))/float(b['open']))
-                    if rate<-3:
-                        label.append(-2)
-                    elif rate<0:
-                        label.append(-1)
-                    elif rate<3:
-                        label.append(1)
-                    else:
-                        label.append(2)
-                    res.extend(res1d)
+                    rate = ((float(d['close'])-float(d['open']))/float(d['open']))-((float(b['close'])-float(b['open']))/float(b['open']))
+
+                if rate < BIGLOWLEV:
+                    label.append(np.array([0, 0, 0, 0, 1]))
+                elif BIGLOWLEV < rate < SMALLLOWLEV:
+                    label.append(np.array([0, 0, 0, 1, 0]))
+                elif SMALLLOWLEV < rate < SMALLHIGHLEV:
+                    label.append(np.array([0, 0, 1, 0, 0]))
+                elif SMALLHIGHLEV < rate < BIGHIGHLEV:
+                    label.append(np.array([0, 1, 0, 0, 0]))
+                else:
+                    label.append(np.array([1, 0, 0, 0, 0]))
             except:
                 print(d['date'])
-        res_reshape=[]
-        m=res.__len__()
-        res=list(res)
-        for i in range(0,m-DAYS*ONEDAYCOUNT,ONEDAYCOUNT):
-            res_reshape.append(res[i:i+(DAYS*ONEDAYCOUNT)])
-        label=label[DAYS:]
-        #股票基本数据附在数组最尾
 
+        return np.array(res), np.array(label)
 
-        return numpy.array(res_reshape) , label
+        # label=np.zeros(shape=(-1, ONEDAYCOUNT), dtype=float)
+        #
+        # for d in self.daily:
+        #     try:
+        #         b = self.search_Big(d['date'])
+        #         if b == None:
+        #             continue
+        #         else:
+        #             res1d = [d['open'], d['close'], d['high'], d['low'], d['volume']]
+        #             #涨跌数据减去大盘比率
+        #             rate=((float(d['close'])-float(d['open']))/float(d['open']))-((float(b['close'])-float(b['open']))/float(b['open']))
+        #             if rate<-3:
+        #                 label.append(0)
+        #             elif -3<rate<-1:
+        #                 label.append(1)
+        #             elif -1<rate<1:
+        #                 label.append(2)
+        #             elif 1<rate<3:
+        #                 label.append(3)
+        #             else:
+        #                 label.append(4)
+        #             res.extend(res1d)
+        #     except:
+        #         print(d['date'])
+        # res_reshape=[]
+        # m=res.__len__()
+        # res=list(res)
+        # for i in range(0,m-DAYS*ONEDAYCOUNT,ONEDAYCOUNT):
+        #     res_reshape.append(res[i:i+(DAYS*ONEDAYCOUNT)])
+        # label=label[DAYS:]
+        # #股票基本数据附在数组最尾
+        # return np.array(res_reshape), np.array(label)
 
 
 sd = StockData('000760')
-r,l=sd._read32()
+r, l = sd._read32()
+print(r.shape)
+print(r[0][0])
+
+print(l.shape)
+for i in range(1, 50):
+    print(l[i])
+
+#print(l)
+
 
