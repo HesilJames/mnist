@@ -5,31 +5,6 @@ from input_stock_data import StockData
 stock = StockData('000636')
 stockData, stockLabel = stock._read32()
 print('data loading complete!')
-length, width = stockData.shape
-division=int(length*2/3)
-trainData=stockData[0:division]
-trainLabel=stockLabel[0:division]
-testData=stockData[division:length]
-testLable=stockLabel[division:length]
-print(stockData.shape)
-print(stockLabel.shape)
-
-trainCur=0
-testCur=0
-
-def next_batch(which,num):
-    global trainCur
-    global testCur
-    if which == 'train':
-        res = (trainData[trainCur: trainCur + num], trainLabel[trainCur:trainCur + num])
-        trainCur = trainCur + num
-        return res
-    if which == 'test':
-        res = (testData[testCur: testCur + num], testLable[testCur:testCur + num])
-        testCur = testCur + num
-        return res
-
-
 
 
 def add_layer(inputs, in_size, out_size, activation_function=None):
@@ -65,7 +40,8 @@ init = tf.global_variables_initializer()
 sess.run(init)
 
 for i in range(500):
-    batch_xs, batch_ys=next_batch('train', 50)
-    sess.run(train_step, feed_dict={xs:batch_xs, ys:batch_ys})
+    batch_xs, batch_ys = stock.net_batch(which='train', num=50)
+    sess.run(train_step, feed_dict={xs: batch_xs, ys: batch_ys})
     if i % 50 == 0:
-        print(compute_accuracy(testData, testLable))
+        print(compute_accuracy(stock.testData, stock.testLabel))
+        print(stock.trainCur, stock.testCur)

@@ -17,6 +17,8 @@ SMALLLOWLEV = -0.005
 SMALLHIGHLEV = 0.005
 BIGHIGHLEV = 0.03
 
+divisionRate = 0.66
+
 class StockData:
 
     def __init__(self,code):
@@ -27,6 +29,8 @@ class StockData:
         self.daily = list(daily_data.find({'code': code}).sort('date', pymongo.ASCENDING))
         self.big = list(daily_data.find({'code': '000001'}).sort('date', pymongo.ASCENDING))#增加大盘数据用于对照
         self.basic = basic_data.find_one({'code': code})
+        self.trainCur = 0
+        self.testCur = 0
 
     def search_Big(self, dateStr ):
         for b in self.big:
@@ -64,7 +68,26 @@ class StockData:
             else:
                  label.append(np.array([1, 0, 0, 0, 0]))
 
+        self.stockData = np.array(res)
+        self.lableData = np.array(label)
+        length, width = np.shape(self.stockData)
+        division = int(length*divisionRate)
+        self.trainData = self.stockData[0: division]
+        self.trainLabel = self.lableData[0: division]
+        self.testData = self.stockData[division: length]
+        self.testLabel = self.lableData[division: length]
+
         return np.array(res), np.array(label)
+
+    def net_batch(self, which, num):
+        if which == 'train':
+            res = (self.trainData[self.trainCur: self.trainCur + num], self.trainLabel[self.trainCur:self.trainCur + num])
+            self.trainCur = self.trainCur + num
+            return res
+        if which == 'test':
+            res = (self.testData[self.testCur: self.testCur + num], self.testLable[self.testCur:self.testCur + num])
+            testCur = self.testCur + num
+            return res
 
         # label=np.zeros(shape=(-1, ONEDAYCOUNT), dtype=float)
         #

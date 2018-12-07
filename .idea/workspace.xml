@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="add plotnumber.py">
-      <change afterPath="$PROJECT_DIR$/cnnstock.py" afterDir="false" />
+    <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="mod many">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hesilmnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/hesilmnist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_stock_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/input_stock_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stockmnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmnist.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/input_stock_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-522">
-              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="186">
+              <caret line="76" column="56" lean-forward="true" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
               <folding>
                 <element signature="e#1#39#0" expanded="true" />
               </folding>
@@ -47,14 +48,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hesilmnist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="128">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="37" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/stockmnist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/math_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="849" selection-start-line="849" selection-end-line="849" />
             </state>
           </provider>
         </entry>
@@ -75,27 +97,6 @@
               <caret line="92" column="11" lean-forward="true" selection-start-line="92" selection-start-column="11" selection-end-line="92" selection-end-column="11" />
               <folding>
                 <element signature="e#1091#1129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testsoftmax.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1278">
-              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/overfittest">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding>
-                <element signature="e#333#370#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,13 +156,15 @@
         <option value="$PROJECT_DIR$/mnist_softmax.py" />
         <option value="$PROJECT_DIR$/buildntest.py" />
         <option value="$PROJECT_DIR$/mnist_with_summaries.py" />
-        <option value="$PROJECT_DIR$/hesilmnist.py" />
         <option value="$PROJECT_DIR$/overfittest" />
         <option value="$PROJECT_DIR$/../../../python-movan/tutorials-master/tensorflowTUT/tf19_saver.py" />
         <option value="$PROJECT_DIR$/plotnumber.py" />
         <option value="$PROJECT_DIR$/multilayertest.py" />
-        <option value="$PROJECT_DIR$/input_stock_data.py" />
         <option value="$PROJECT_DIR$/cnnstock.py" />
+        <option value="$PROJECT_DIR$/MNIST_data/stockmnist.py" />
+        <option value="$PROJECT_DIR$/hesilmnist.py" />
+        <option value="$PROJECT_DIR$/input_stock_data.py" />
+        <option value="$PROJECT_DIR$/stockmnist.py" />
       </list>
     </option>
   </component>
@@ -192,6 +195,11 @@
               <item name="mnist" type="462c0819:PsiDirectoryNode" />
               <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mnist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mnist" type="462c0819:PsiDirectoryNode" />
+              <item name="MNIST_data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -219,28 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.input_stock_data">
-    <configuration name="full_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="mnist" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../python-movan/tutorials-master/tensorflowTUT/tf18_CNN3" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../python-movan/tutorials-master/tensorflowTUT/tf18_CNN3/full_code.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.stockmnist">
     <configuration name="input_stock_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -304,6 +291,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="stockmnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mnist" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stockmnist.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tf19_saver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="mnist" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -326,19 +334,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.full_code" />
       <item itemvalue="Python.tf19_saver" />
       <item itemvalue="Python.plotnumber" />
       <item itemvalue="Python.multilayertest" />
       <item itemvalue="Python.input_stock_data" />
+      <item itemvalue="Python.stockmnist" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stockmnist" />
         <item itemvalue="Python.input_stock_data" />
         <item itemvalue="Python.multilayertest" />
         <item itemvalue="Python.plotnumber" />
         <item itemvalue="Python.tf19_saver" />
-        <item itemvalue="Python.full_code" />
       </list>
     </recent_temporary>
   </component>
@@ -507,20 +515,34 @@
       <option name="project" value="LOCAL" />
       <updated>1544148143542</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="mod many">
+      <created>1544167716666</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1544167716667</updated>
+    </task>
+    <task id="LOCAL-00024" summary="mod many">
+      <created>1544170904313</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1544170904313</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19635193" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19635193" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49624464" visible="true" weight="0.32087913" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49624464" visible="true" weight="0.32087913" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -541,7 +563,8 @@
     <MESSAGE value="mod multilayertest.py" />
     <MESSAGE value="mod input_stock_data.py" />
     <MESSAGE value="add plotnumber.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add plotnumber.py" />
+    <MESSAGE value="mod many" />
+    <option name="LAST_COMMIT_MESSAGE" value="mod many" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BUILD">
@@ -808,13 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_stock_data.py">
+    <entry file="file://$PROJECT_DIR$/fully_connected_feed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522">
-          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="e#1#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2844">
+          <caret line="171" column="27" selection-start-line="171" selection-start-column="27" selection-end-line="171" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -828,17 +848,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fully_connected_feed.py">
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/tensorflow/python/ops/math_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2844">
-          <caret line="171" column="27" selection-start-line="171" selection-start-column="27" selection-end-line="171" selection-end-column="27" />
+        <state relative-caret-position="195">
+          <caret line="849" selection-start-line="849" selection-end-line="849" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hesilmnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="128">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_stock_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="76" column="56" lean-forward="true" selection-start-line="76" selection-start-column="56" selection-end-line="76" selection-end-column="56" />
+          <folding>
+            <element signature="e#1#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stockmnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
