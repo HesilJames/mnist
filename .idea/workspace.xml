@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="mod many">
-      <change afterPath="$PROJECT_DIR$/stocknlayer.py" afterDir="false" />
+    <list default="true" id="1eaf2fe8-0e3f-457c-9137-e5aa4482d20b" name="Default" comment="cnnstock stockmultilayer all in use">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildntest.py" beforeDir="false" afterPath="$PROJECT_DIR$/buildntest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cnnstock.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnnstock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hesilmnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/hesilmnist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_stock_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/input_stock_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multilayertest.py" beforeDir="false" afterPath="$PROJECT_DIR$/multilayertest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stockmnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/stockmnist.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cnnstock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+            <state relative-caret-position="380">
+              <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -509,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544172491216</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="cnnstock stockmultilayer all in use">
+      <created>1544491285280</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1544491285280</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -544,7 +544,8 @@
     <MESSAGE value="mod input_stock_data.py" />
     <MESSAGE value="add plotnumber.py" />
     <MESSAGE value="mod many" />
-    <option name="LAST_COMMIT_MESSAGE" value="mod many" />
+    <MESSAGE value="cnnstock stockmultilayer all in use" />
+    <option name="LAST_COMMIT_MESSAGE" value="cnnstock stockmultilayer all in use" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BUILD">
@@ -874,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cnnstock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        <state relative-caret-position="380">
+          <caret line="69" column="24" lean-forward="true" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
