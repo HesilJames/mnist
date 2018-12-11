@@ -72,7 +72,7 @@ class StockData:
         res = []
         label = []
         daylenth=self.daily.__len__()
-        print(daylenth)
+        #print(daylenth)
         for i in range(DAYS, daylenth):
             res_low1=[]
             d=self.daily[i]
@@ -111,18 +111,29 @@ class StockData:
 
     def net_batch(self, which, num):
         if which == 'train':
-            if self.trainCur + num > self.testLabel.__len__():
-                self.trainCur = 0
-            res = (self.trainData[self.trainCur: self.trainCur + num],
-                   self.trainLabel[self.trainCur:self.trainCur + num])
-            self.trainCur = self.trainCur + num
+            if (self.trainCur + num) > self.trainLabel.__len__():
+                res = (np.append(self.trainData[self.trainCur: self.trainLabel.__len__()],
+                                 self.trainData[0: self.trainCur+num - self.trainLabel.__len__()], axis=0),
+                       np.append(self.trainLabel[self.trainCur: self.trainLabel.__len__()],
+                                 self.trainLabel[0: self.trainCur + num - self.trainLabel.__len__()], axis=0))
+                self.trainCur = self.trainCur + num - self.trainLabel.__len__()
+            else:
+                res = (self.trainData[self.trainCur: self.trainCur + num],
+                       self.trainLabel[self.trainCur:self.trainCur + num])
+                self.trainCur = self.trainCur + num
             return res
 
         if which == 'test':
-            if self.testCur + num > self.testLabel.__len__():
-                self.testCur = 0
-            res = (self.testData[self.testCur: self.testCur + num], self.testLable[self.testCur:self.testCur + num])
-            self.testCur = self.testCur + num
+            if (self.testCur + num) > self.testLabel.__len__():
+                res = (np.append(self.testData[self.testCur: self.testLabel.__len__()],
+                                 self.testData[0: self.testCur + num - self.testLabel.__len__()], axis=0),
+                       np.append(self.testLabel[self.testCur: self.testLabel.__len__()],
+                                 self.testLabel[0: self.testCur + num - self.testLabel.__len__()], axis=0))
+                self.testCur = self.testCur + num - self.testLabel.__len__()
+            else:
+                res = (self.testData[self.testCur: self.testCur + num],
+                       self.testLabel[self.testCur: self.testCur + num])
+                self.testCur = self.testCur + num
             return res
 
         # label=np.zeros(shape=(-1, ONEDAYCOUNT), dtype=float)

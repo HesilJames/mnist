@@ -125,10 +125,10 @@ def get_basic_datas(data_kind):#datakind 为debtpaying,growth,operation,profit,r
 
 
 #datakinds=['debtpaying','growth','operation','profit','report']
-datakinds=['growth','operation','profit','report']
-for datakind in datakinds:
-    print('start getting '+datakind+'....')
-    get_basic_datas(datakind)
+# datakinds=['growth','operation','profit','report']
+# for datakind in datakinds:
+#     print('start getting '+datakind+'....')
+#     get_basic_datas(datakind)
 
 #test_get_stock_code()
 #allStockCode=get_all_stock_code()
