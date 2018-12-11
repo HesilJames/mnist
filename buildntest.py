@@ -31,8 +31,8 @@ with tf.name_scope('inputs'):
     xs = tf.placeholder(tf.float32, [None, 1], name='x_input')
     ys = tf.placeholder(tf.float32, [None, 1], name='y_input')
 
-l1=add_layer(xs, 1, 10, 1, activation_function=tf.nn.relu)
-prediction=add_layer(l1, 10, 1, 2, activation_function=None)
+l1 = add_layer(xs, 1, 10, 1, activation_function=tf.nn.relu)
+prediction = add_layer(l1, 10, 1, 2, activation_function=None)
 
 with tf.name_scope('loss'):
     loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys-prediction), reduction_indices=[1]), name='loss')
@@ -51,14 +51,14 @@ plt.show()
 init = tf.global_variables_initializer()
 sess = tf.Session()
 merge = tf.summary.merge_all()
-writer = tf.summary.FileWriter('logs/',sess.graph)
+writer = tf.summary.FileWriter('logs/', sess.graph)
 sess.run(init)
 
 for i in range(10000):
     sess.run(train_step, feed_dict={xs: x_data, ys: y_data})
     if i % 50 == 0:
-        result = sess.run(merge ,feed_dict={xs:x_data , ys:y_data})
-        writer.add_summary(result ,i)
+        result = sess.run(merge, feed_dict={xs: x_data, ys: y_data})
+        writer.add_summary(result, i)
         ''' plot visuallize
         try:
             ax.lines.remove(lines[0])

@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 from input_stock_data import StockData
 
-stock = StockData('000006')
+stock = StockData('000636')
 stockData, stockLabel = stock._read32()
 print('data loading complete!')
 
@@ -29,7 +29,9 @@ xs = tf.placeholder(tf.float32, [None, 256])
 ys = tf.placeholder(tf.float32, [None, 5])
 
 #add output layer
-prediction = add_layer(xs, 256, 5, activation_function=tf.nn.softmax)
+l1 = add_layer(xs, 256, 20, activation_function=tf.nn.relu)
+l2 = add_layer(l1, 20, 10, activation_function=None)
+prediction = add_layer(l2, 10, 5, activation_function=tf.nn.softmax)
 cross_entropy = tf.reduce_mean(-tf.reduce_sum(ys * tf.log(prediction), reduction_indices=[1]))
 train_step = tf.train.GradientDescentOptimizer(0.1).minimize(cross_entropy)
 

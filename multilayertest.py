@@ -26,8 +26,8 @@ def plotnumber(x):
 
 if __name__ == "__main__":
     mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
-    x = tf.placeholder("float", [None, 784])
-    W = tf.Variable(tf.zeros([784, 10]))
+    x = tf.placeholder("float", [None, 256])
+    W = tf.Variable(tf.zeros([256, 10]))
     b = tf.Variable(tf.zeros([10]))
     y = tf.nn.softmax(tf.matmul(x, W) + b)
     y_ = tf.placeholder("float", [None, 10])

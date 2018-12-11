@@ -17,7 +17,7 @@ SMALLLOWLEV = -0.005
 SMALLHIGHLEV = 0.005
 BIGHIGHLEV = 0.03
 
-divisionRate = 0.66
+divisionRate = 0.85  #划分训练集和测试集的比例
 
 class StockData:
 
@@ -31,12 +31,41 @@ class StockData:
         self.basic = basic_data.find_one({'code': code})
         self.trainCur = 0
         self.testCur = 0
+        self.biggest = [0, 0, 0, 0] #统计最大最小用于归一化处理
+        self.smallest = [0, 0, 0, 0]
+        self.length=self.daily.__len__()
+        for d in self.daily:
+            if d['close'] > self.biggest[0]:
+                self.biggest[0] = d['close']
+            if d['close'] < self.smallest[0]:
+                self.smallest[0] = d['close']
+            if d['high'] > self.biggest[1]:
+                self.biggest[1] = d['high']
+            if d['high'] < self.smallest[1]:
+                self.smallest[1] = d['high']
+            if d['low'] > self.biggest[2]:
+                self.biggest[2] = d['low']
+            if d['low'] < self.smallest[2]:
+                self.smallest[2] = d['low']
+            if d['volume'] > self.biggest[3]:
+                self.biggest[3] = d['volume']
+            if d['volume'] < self.smallest[3]:
+                self.smallest[3] = d['volume']
+
+
+
 
     def search_Big(self, dateStr ):
         for b in self.big:
             if b['date'] == dateStr:
                 return b
         return None
+
+    #对数据进行归一化处理
+    def returnOne(self, col, number):
+        length = self.biggest[col]-self.smallest[col]
+        rate = (number-self.smallest[col])/length
+        return rate
 
 
     def _read32(self):
@@ -49,7 +78,8 @@ class StockData:
             d=self.daily[i]
             for j in range(i-DAYS, i):
                 tmp = self.daily[j]
-                res_low1.extend([tmp['close'], tmp['high'], tmp['low'], tmp['volume']])
+                res_low1.extend([self.returnOne(0, tmp['close']), self.returnOne(1, tmp['high']),
+                                 self.returnOne(2, tmp['low']), self.returnOne(3, tmp['volume'])])
             res.append(res_low1)
             b = self.search_Big(d['date'])
             if b == None:
@@ -81,12 +111,18 @@ class StockData:
 
     def net_batch(self, which, num):
         if which == 'train':
-            res = (self.trainData[self.trainCur: self.trainCur + num], self.trainLabel[self.trainCur:self.trainCur + num])
+            if self.trainCur + num > self.testLabel.__len__():
+                self.trainCur = 0
+            res = (self.trainData[self.trainCur: self.trainCur + num],
+                   self.trainLabel[self.trainCur:self.trainCur + num])
             self.trainCur = self.trainCur + num
             return res
+
         if which == 'test':
+            if self.testCur + num > self.testLabel.__len__():
+                self.testCur = 0
             res = (self.testData[self.testCur: self.testCur + num], self.testLable[self.testCur:self.testCur + num])
-            testCur = self.testCur + num
+            self.testCur = self.testCur + num
             return res
 
         # label=np.zeros(shape=(-1, ONEDAYCOUNT), dtype=float)
